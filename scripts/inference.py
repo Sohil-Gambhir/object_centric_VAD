@@ -3,7 +3,7 @@ import os
 import sys
 sys.path.append('../')
 import tensorflow as tf
-from utils import util
+from "object_centric_VAD/utils" import util
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
 import matplotlib.pyplot as plt
