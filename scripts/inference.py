@@ -141,7 +141,7 @@ if __name__=='__main__':
     os.environ['CUDA_VISIBLE_DEVICES']=args.gpu
     np_paths_boxes_path = args.box_imgs_npy_path
     # print(image_dataset_path)
-    graph=load_frozen_graph(args.graph_path)
+    graph=load_frozen_graph(args.forzen_graph)
     frame_lists=util.get_frames_paths(args.dataset_folder,gap=2)
     # vis_detection_result(graph,frame_lists[20],'/home/'+args.machine+'/vis_result.jpg')
     run_inference_for_images_per_image(graph,image_dataset_path,np_paths_boxes_path,0.5)
